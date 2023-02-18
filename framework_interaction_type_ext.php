@@ -88,7 +88,7 @@ class CommunicationInfrastructure
 /**
  * Interface SoftwareInterface.
  *
- * A basic Interface prototype to software systems used for during Interactions
+ * A basic Interface prototype to software systems used during Interactions
  */
 interface SoftawareInterface
 {
@@ -109,7 +109,7 @@ class MqttInterface implements SoftawareInterface
 /**
  * Interface MesInterface.
  *
- * A basic Interface prototype to a MES Application
+ * A basic Interface prototype to MES Application
  */
 class MesInterface implements SoftawareInterface
 {
