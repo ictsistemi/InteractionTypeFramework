@@ -85,21 +85,39 @@ class CommunicationInfrastructure
 
 }
 
+/**
+ * Interface SoftwareInterface.
+ *
+ * A basic Interface prototype to software systems used for during Interactions
+ */
 interface SoftawareInterface
 {
 }
+
+/**
+ * Interface MqttInterface.
+ *
+ * A basic Interface prototype to MQTT Broker
+ */
 class MqttInterface implements SoftawareInterface
 {
     public function __construct(ActiveEntity $owner){
        echo "MQTT broker has been successfully interfaced by " . $owner->getName() ."<br>";
     }
 }
+
+/**
+ * Interface MesInterface.
+ *
+ * A basic Interface prototype to a MES Application
+ */
 class MesInterface implements SoftawareInterface
 {
     public function __construct(ActiveEntity $owner){
         echo "MES has been successfully interfaced by " . $owner->getName() ."<br>";
     }
 }
+
 /**
  * Class ActiveEntity
  *
